@@ -45,7 +45,6 @@ public class Main {
     private static double calcSumTermsIsGreaterThanE(double x, int n, double e){
         double term;
         double sum = 0;
-
         for (int i = 0; i < n; i++){
             if (i % 2 != 0){
                 term = -1 * (i + 1) * Math.pow(x, i);
