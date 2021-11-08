@@ -32,6 +32,7 @@ public class Main {
 
     private static double calcSumOfNTerms(double x, int n) {
         double sumOfSequence = 0;
+        
         for (int i = 0; i < n; i++){
             if (i % 2 != 0){
                 sumOfSequence += -1 * (i + 1) * Math.pow(x, i);
@@ -39,12 +40,14 @@ public class Main {
                 sumOfSequence += (i + 1) * Math.pow(x, i);
             }
         }
+        
         return sumOfSequence;
     }
 
     private static double calcSumTermsIsGreaterThanE(double x, int n, double e){
         double term;
         double sum = 0;
+        
         for (int i = 0; i < n; i++){
             if (i % 2 != 0){
                 term = -1 * (i + 1) * Math.pow(x, i);
@@ -55,6 +58,7 @@ public class Main {
                 sum += term;
             }
         }
+        
         return sum;
     }
 
