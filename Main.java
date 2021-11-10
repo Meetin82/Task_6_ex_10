@@ -44,17 +44,17 @@ public class Main {
         return sumOfSequence;
     }
 
-    private static double calcSumTermsIsGreaterThanE(double x, int n, double e){
+    private static double calcSumTermsIsGreaterThanE (double x, int n, double e){
         double term;
         double sum = 0;
         
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             if (i % 2 != 0){
                 term = -1 * (i + 1) * Math.pow(x, i);
             } else {
                 term = (i + 1) * Math.pow(x, i);
             }
-            if (Math.abs(term) > e){
+            if (Math.abs(term) > e) {
                 sum += term;
             }
         }
@@ -62,23 +62,23 @@ public class Main {
         return sum;
     }
 
-    private static double calcFunctionUsingMath(double x){
+    private static double calcFunctionUsingMath(double x) {
         return 1 / Math.pow(1 + x, 2);
     }
 
-    private static void printSumOfNTerms(double sumOfNTerms){
+    private static void printSumOfNTerms(double sumOfNTerms) {
         System.out.println("Sum of n terms: " + sumOfNTerms);
     }
 
-    private static void printSumTermsIsGreaterThanE (double sumTermsIsGreaterThanE){
+    private static void printSumTermsIsGreaterThanE(double sumTermsIsGreaterThanE) {
         System.out.println("The sum of terms that are greater in absolute value than e: " + sumTermsIsGreaterThanE);
     }
 
-    private static void printSumTermsIsGreaterThanEDividedBy10 (double sumTermsIsGreaterThanEDividedBy10){
+    private static void printSumTermsIsGreaterThanEDividedBy10 (double sumTermsIsGreaterThanEDividedBy10) {
         System.out.println("The sum of terms that are greater in absolute value than e/10: " + sumTermsIsGreaterThanEDividedBy10);
     }
 
-    private static void printValueFunctionUsingMath(double valueFunctionUsingMath){
+    private static void printValueFunctionUsingMath(double valueFunctionUsingMath) {
         System.out.println("Function value using Math methods: " + valueFunctionUsingMath);
     }
 
@@ -89,15 +89,15 @@ public class Main {
         printValueFunctionUsingMath(valueFunctionUsingMath);
     }
 
-    private static boolean isXPositive(double num){
+    private static boolean isXPositive(double num) {
         return num <= -1 || num >= 1;
     }
 
-    private static boolean isNPositive(double num){
+    private static boolean isNPositive(double num) {
         return num < 0;
     }
 
-    private static double readNum(String value){
+    private static double readNum(String value) {
         System.out.print("Enter " + value);
         Scanner scn = new Scanner(System.in);
         return scn.nextDouble();
