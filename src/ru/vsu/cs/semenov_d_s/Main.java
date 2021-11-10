@@ -33,8 +33,8 @@ public class Main {
     private static double calcSumOfNTerms(double x, int n) {
         double sumOfSequence = 0;
 
-        for (int i = 0; i < n; i++){
-            if (i % 2 != 0){
+        for (int i = 0; i < n; i++) {
+            if (i % 2 != 0) {
                 sumOfSequence += -1 * (i + 1) * Math.pow(x, i);
             } else {
                 sumOfSequence += (i + 1) * Math.pow(x, i);
