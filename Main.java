@@ -9,7 +9,7 @@ public class Main {
         Locale.setDefault(Locale.ROOT);
 
         double x = readNum("x: ");
-        if (isXPositive(x)){
+        if (isXPositive(x)) {
             System.out.println("The entered number does not match the conditions of this task.");
             return;
         }
@@ -33,8 +33,8 @@ public class Main {
     private static double calcSumOfNTerms(double x, int n) {
         double sumOfSequence = 0;
         
-        for (int i = 0; i < n; i++){
-            if (i % 2 != 0){
+        for (int i = 0; i < n; i++) {
+            if (i % 2 != 0) {
                 sumOfSequence += -1 * (i + 1) * Math.pow(x, i);
             } else {
                 sumOfSequence += (i + 1) * Math.pow(x, i);
@@ -44,12 +44,12 @@ public class Main {
         return sumOfSequence;
     }
 
-    private static double calcSumTermsIsGreaterThanE (double x, int n, double e){
+    private static double calcSumTermsIsGreaterThanE (double x, int n, double e) {
         double term;
         double sum = 0;
         
         for (int i = 0; i < n; i++) {
-            if (i % 2 != 0){
+            if (i % 2 != 0) {
                 term = -1 * (i + 1) * Math.pow(x, i);
             } else {
                 term = (i + 1) * Math.pow(x, i);
@@ -82,7 +82,7 @@ public class Main {
         System.out.println("Function value using Math methods: " + valueFunctionUsingMath);
     }
 
-    private static void printResult(double sumOfNTerms, double sumTermsIsGreaterThanE, double sumTermsIsGreaterThanEDividedBy10, double valueFunctionUsingMath){
+    private static void printResult(double sumOfNTerms, double sumTermsIsGreaterThanE, double sumTermsIsGreaterThanEDividedBy10, double valueFunctionUsingMath) {
         printSumOfNTerms(sumOfNTerms);
         printSumTermsIsGreaterThanE(sumTermsIsGreaterThanE);
         printSumTermsIsGreaterThanEDividedBy10(sumTermsIsGreaterThanEDividedBy10);
