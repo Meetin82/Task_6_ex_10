@@ -9,13 +9,13 @@ public class Main {
         Locale.setDefault(Locale.ROOT);
 
         double x = readNum("x: ");
-        if (checkXPositive(x)){
+        if (isXPositive(x)){
             System.out.println("The entered number does not match the conditions of this task.");
             return;
         }
 
         int n = (int) readNum("n: ");
-        if (checkNPositive(n)) {
+        if (isNPositive(n)) {
             System.out.println("The ordinal number of a number cannot be less than zero.");
             return;
         }
@@ -89,11 +89,11 @@ public class Main {
         printValueFunctionUsingMath(valueFunctionUsingMath);
     }
 
-    private static boolean checkXPositive(double num){
+    private static boolean isXPositive(double num){
         return num <= -1 || num >= 1;
     }
 
-    private static boolean checkNPositive(double num){
+    private static boolean isNPositive(double num){
         return num < 0;
     }
 
