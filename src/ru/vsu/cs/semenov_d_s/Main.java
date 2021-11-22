@@ -10,7 +10,7 @@ public class Main {
 
         double x = readNum("x: ");
         if (isXPositive(x)) {
-            System.out.println("The entered number does not match the conditions of this task.");
+            System.out.println("The entered number does not match the conditions of this task. (-1 <= x <= 1)");
             return;
         }
 
